@@ -1,11 +1,10 @@
 @import 
-"variables",
-"normalize",
-"utils",
-"global",
-"mixins",
+"./all-style/variables",
+"./all-style/normalize",
+"./all-style/utils",
+"./all-style/global",
+"./all-style/mixins",
 "./block/header",
-"./block/footer",
 "./main-section/hero-section",
 "./main-section/section-sponsor",
 "./main-section/services-section",
@@ -13,4 +12,5 @@
 "./main-section/work-with-us-section.scss",
 "./main-section/customer-section.scss",
 "./main-section/price-section.scss",
-"./main-section/quote-section.scss";
+"./main-section/quote-section.scss",
+"./block/footer";
