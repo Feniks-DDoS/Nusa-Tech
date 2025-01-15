@@ -1,0 +1,91 @@
+.footer {
+    background-color: #2D2D2D;
+
+    &__container {
+        padding-top: 5rem;
+        padding-bottom: 2.9375rem;
+        text-align: start;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items:start;
+        gap: 3.75rem;
+    }
+    &__menu {
+        display: flex;
+        gap: 2.75rem;
+    }
+    &__logo {
+        max-width: 31.8125rem;
+        padding-bottom: 8.8125rem;
+        a {
+            @include font(15, 30);
+            font-weight: 600;
+            font-family: "Montserrat";
+            text-decoration: none;
+            color: var(--color-light);
+        }
+
+        img {
+            padding-right: 0.5rem;
+        }
+        
+        p {
+            padding-top: 3.1875rem;
+            @include font(10, 20);
+            line-height: 1.875rem;
+            font-weight: 500;
+        }
+    }
+    &__menu-title {
+        padding-bottom: 2.5rem;
+        color: var(--color-light-pink);
+        text-wrap: nowrap;
+        @include font(12, 24);
+        line-height: 2rem;
+        font-weight: 600;
+    }
+    &__menu-item {
+        padding-bottom: 1rem;
+    }
+    &__menu-link {
+        text-decoration: none;
+        text-wrap: nowrap;
+        @include font(8, 16);
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+    &__circle {
+        width: 50px;
+        height: 50px;
+        padding: 0.5rem;
+        margin-right: 0.8125rem;
+        background-color: var(--color-light-gray);
+    }
+
+    hr {
+        background-color: #fff;
+    }
+    &__copyright {
+        display: flex;
+        padding-top: 2.75rem;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    @media (max-width: 1100px) {
+        &__flex {
+            flex-wrap: wrap;
+        }
+        &__menu {
+            flex-basis: 100%;
+            justify-content: space-between;
+        }
+        &__logo {
+            padding-bottom: 0;
+            max-width: var(--container-width);
+        }
+        
+    }
+}

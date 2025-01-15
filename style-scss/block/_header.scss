@@ -1,0 +1,79 @@
+.header {
+    background-color: var(--color-dark); 
+     
+    &__container {
+        padding-block: 1.5rem;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    &__logo a {
+        color: var(--color-light);
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-decoration: none;
+           
+        img {
+            padding-right: 0.5rem;
+        }
+    }
+    &__menu--start {
+        flex-shrink: 0;
+    }
+   &__menu-list{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+   }
+   &__menu-link {
+    color: var(--color-light-grey);
+    line-height: 1.5rem;
+   }
+   &__menu-link:hover,
+   &__menu-link:focus-visible,
+   &__menu-link.is-current {
+	text-decoration-color: var(--color-dark);
+}
+&__menu-link {
+    text-decoration-thickness: 0.125rem;
+	text-decoration-style: solid;
+	text-decoration-color: transparent;
+	text-underline-offset: 0.25rem;
+	transition: 0.2s linear;
+	transition-property: color, text-decoration-color;
+}
+&__menu-link:hover,
+&__menu-link:focus-visible,
+&__menu-link.is-current {
+	text-decoration-color: #AC6CFF;
+}
+   &__menu--button {
+    color: var(--color-light-pink);
+    background-color: transparent;
+    border-radius: var(--border-radius-header-btn);
+    font-weight: 600;
+    padding: 12px 20px;
+    line-height: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    transition: all var(--transition-duration);
+   }
+   &__menu--button:nth-child(1) {
+    margin-right: -1rem;
+   }
+   &__menu--button:hover {
+    background-color: var(--color-light-pink);
+    color: var(--color-light);
+   }
+
+   @media (max-width: 950px) {
+    &__menu-item:nth-child(-n + 6) {
+        order: 1;
+       }
+   }
+}
+

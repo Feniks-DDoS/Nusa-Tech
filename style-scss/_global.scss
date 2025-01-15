@@ -1,0 +1,38 @@
+a {
+    font-size: min(1.1vw , 1.5rem);
+    font-weight: 600;
+    list-style: none;
+    color: var(--color-light-gray);
+}
+.button {
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    border-radius: var(--border-radius-start-now);
+    color: var(--color-light);
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+.circle {
+    background-color: var(--color-light-pink);
+    border-radius: 50%;
+    width: 6.25rem;
+    aspect-ratio: 1;
+    padding: 1rem;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+} 
+html {
+	overflow-x: clip;
+
+	scrollbar-gutter: stable;
+	scroll-behavior: smooth;
+}
+body {
+    font-family: var(--font-family-base);
+    color: var(--color-light-gray);
+    background-color: var(--color-page);
+}

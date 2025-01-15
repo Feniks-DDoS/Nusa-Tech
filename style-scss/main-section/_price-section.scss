@@ -1,0 +1,100 @@
+.price {
+    background-color: #2F1C48;
+
+
+    &__container {
+        padding-top: 3.125rem;
+        padding-bottom: 9.4375rem;
+        text-align: center;
+    }
+    &__title {
+        @include font(16,32);
+        font-weight: 600;
+        line-height: 2.5625rem;
+        letter-spacing: -0.32px;
+    }
+    &__subtitle {
+        padding-top: 1.25rem;
+        @include font(10,20);
+        font-weight: 400;
+        line-height: 1.875rem;
+    }
+    &__list {
+        padding-top: 3.125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.3125rem;
+        
+    }
+    &__item:hover {
+        transform:scale(1.1 ,1.1);
+    }
+    &__list:hover &__item:not(:hover) {
+        transform:scale(0.9 ,0.9);
+        opacity: 0.7;
+    }
+  
+    &__item {
+        padding: 2.8125rem 1.125rem;
+        background-color: #FBEBD7;
+        border-radius: 30px;
+        max-width: 19.375rem;
+        min-height: 23.75rem;
+        transition: all var(--transition-duration);
+    }
+    &__item:first-child &__profit-item:last-child {
+        padding-bottom: 2.5rem
+    }
+    &__item:nth-child(2n) &__profit-item:last-child {
+        padding-bottom: 1rem
+    }
+    &__item:last-child &__profit-item:last-child {
+        padding-bottom: 2.5rem
+    }
+        &__plan-text {
+        @include font(12,24);
+        font-weight: 600;
+        line-height: 2rem;
+        color: #2C2E33;
+    }
+    &__price {
+        color: #FF9900;
+        @include font(20,40);
+        font-weight: 600;
+        line-height: 3.25rem;
+        letter-spacing: -0.8px;
+        padding-top: 0.625rem;
+    }
+    &__profit-list {
+        padding-top: 0.5625rem;
+        padding-inline: 1rem;
+        list-style:disc;
+        color: #2C2E33;
+        text-align: start;
+    }
+    &__profit-item {
+        @include font(8,16);
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+    &__button {
+        background-color: #FF9900;
+        text-decoration: none;
+        color: #2C2E33;
+        @include font(8,16);
+        font-weight: 600;
+        border-radius: var(--border-radius-start-now);
+        line-height: 1.5rem;
+        padding: 0.75rem 1.25rem;
+        margin-top: 1rem;
+    }
+    @media (max-width: 1100px) {
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__item {
+            flex-basis: 50%;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.sponsor {
+    background-color: #FBEBD7;
+
+    &__container {
+        padding-inline: 1.8rem;
+        padding-block: 3.75rem;
+        text-align: center;
+    }
+    &__horizontal-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2.5rem;
+    }
+    &__text {
+        padding-top:3rem;
+        color: var(--color-dark-pink);
+        @include font(10,24);
+        font-weight: 500;
+        line-height: 2rem;
+    }
+}

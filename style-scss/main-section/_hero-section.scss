@@ -1,0 +1,102 @@
+.hero {
+    background-image: url(../../icons/hero-background.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--color-dark-pink);
+
+
+    
+&__container {
+    padding-top: 3.75rem;
+    min-height: 100dvh;
+    text-align: center;
+}
+
+&__title {
+    @include font;
+    font-weight: 700;
+    line-height: 99px;
+    letter-spacing: -1.9px;      
+
+    span {
+        color: var(--color-light-pink);
+    }
+}
+
+&__subtitle {
+    @include font(10,24);
+    padding-top: 1.8rem;
+    font-weight: 600;
+    line-height: 33px;
+
+}
+&__form {
+    padding-block: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+&__form-item {
+    max-width: var(--container-width);
+    padding-inline: var(--container-padding-inline);
+}
+&__guick-search {
+    width: 40rem;
+    border: none;
+    position: relative;
+    min-height: 4.375rem;
+    color: #848484;
+    background-color: #fff;
+    padding:0.625rem 1.25rem;
+    border-radius: var(--border-radius-start-now);
+}
+&__field-control {
+    width: 40rem;
+    border: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    min-height: 4.375rem;
+    color: #848484;
+    background-color: #fff;
+    padding:0.625rem 1.25rem;
+    border-radius: var(--border-radius-start-now);
+}
+&__field-control--button {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    width: 5rem;
+    height: 3.125rem;
+    background-color: var(--color-light-pink);
+    border-radius: 18px;
+}
+&__field-control--button::before {
+    position: absolute;
+    content: "";
+    top: 20%;
+    right: 35%;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../icons/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+&__button-start-now {
+    border: 1px solid var(--color-light-pink);
+    transition: background-color var(--transition-duration);
+}
+&__button-learn-more {
+    border: 1px solid var(--color-light-pink);
+    margin-left: 1.8rem;
+
+    transition: background-color var(--transition-duration);
+}
+&__button-learn-more:hover,
+&__button-start-now:hover {
+    background-color: var(--color-light-pink);
+}
+}

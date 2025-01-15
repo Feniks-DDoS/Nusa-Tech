@@ -1,0 +1,60 @@
+:root {
+      --color-dark:#2D2D2D;
+      --color-light:#FFFFFF;
+      --color-dark-pink:#2F1C48;
+      --color-page:#2B2038;
+      --color-light-gray:#F8F9FF;
+      --color-light-pink:#AC6CFF;
+
+
+
+      --border-radius-header-btn: 15px;
+      --border-radius-services-cards: 20px;
+      --border-radius-50: 50%;
+      --border-radius-start-now: 20px;
+
+
+      --container-width: 1440px;
+      --container-padding-inline: 70px;
+
+      --font-family-base:"Poppins", "sans-serif";
+
+      --transition-duration: 0.2s;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Medium.woff2) format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Bold.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Montserrat-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

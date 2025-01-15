@@ -1,0 +1,83 @@
+.quote {
+   
+position: relative;
+overflow: hidden;
+
+
+    &__container {
+        padding-block: 8.125rem;
+       display: flex;
+       align-items: start;
+       justify-content: space-between;
+       gap: 3.4375rem;
+       text-wrap: nowrap;
+    }
+
+    &__text {
+      @include font(15,35);
+      font-weight: 600;
+      line-height: 3.25rem;
+      letter-spacing: -0.8px;
+      position: relative;
+      
+      p {
+        @include font(10,20);
+      font-weight: 500;
+      line-height: 1.875rem;
+      padding-top: 4rem;
+      }
+    }
+
+    &__text::before {
+        content: "";
+        position: absolute;
+        top: 5%;
+        right: -5%;
+        width: 40px;
+        height: 40px;
+        background-image: url(../../icons/background-start.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+    &__button {
+        background-color: var(--color-light-pink);
+    }
+    @media (max-width: 1100px) {
+      &__container {
+          flex-wrap: wrap;
+      }
+  }
+}
+.quote::before {
+  content: "";
+      position: absolute;
+      top: -20%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background-image: url(../../images/quote-background-circel-1.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+}
+.quote::after {
+  content: "";
+      position: absolute;
+      bottom: -65%;
+      right: 0%;
+      width: 627px;
+      height: 616px;
+      background-image: url(../../icons/Planet.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+}
+@media (max-width: 1100px) {
+  .quote::after {
+      bottom: -50%;
+  }
+}
